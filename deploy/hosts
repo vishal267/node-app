@@ -1,0 +1,21 @@
+[ua]
+18.136.206.49 ansible_user=ubuntu
+
+[ua]
+18.136.206.49 ansible_user=ubuntu
+
+
+[ua]
+18.136.206.49 ansible_user=ubuntu
+
+[function:children]
+web
+region
+
+[region:children]
+environments
+
+[environments:children]
+dev
+qa
+ua

@@ -1,0 +1,8 @@
+---
+ - name: Install nginx web server
+   apt: name=nginx state=latest update_cache=true
+
+ - name: start nginx service
+   service: name=nginx state=started
+
+
